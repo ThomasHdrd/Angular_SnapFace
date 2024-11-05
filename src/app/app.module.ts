@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppComponent,
+    HeaderComponent,
+    FaceSnapListComponent, 
+
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
